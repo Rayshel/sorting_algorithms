@@ -17,7 +17,7 @@ void prints(int *arr, char *side, size_t start, size_t end)
 			printf("%d, ", arr[i]);
 		else
 			printf("%d\n", arr[i]);
-	}
+	}	
 }
 /**
  * rec_merge - recursively splits and merges halves
@@ -43,7 +43,7 @@ void rec_merge(int *array, int *sortArr, size_t l, size_t r)
 	for (i = l; i < r; i++)
 	{
 		if ((l_half < mid) &&
-	        	((r_half == r) || (array[l_half] < array[r_half])))
+				((r_half == r) || (array[l_half] < array[r_half])))
 		{
 			sortArr[i] = array[l_half];
 			l_half++;
